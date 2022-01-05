@@ -89,81 +89,32 @@
 										}
 										$ind = 0; 
 										$sw = 1;
-										foreach($book_array as $bk){  
+										foreach($book_array as $bk){ 
+											$ind += 1; 
 											$sw = 2;
 											if($bk['isbn'] == $key){
-													$ind += 1;
 													$sw = 1;
-													echo "$ind:";
-													echo ("<br>");
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
+													echo '"'; 
 													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
-													}
-													else{
-														echo 'Not Available';
-													}
-													echo ("<br>");
-
+													echo '"'; 
+													echo " is at $ind no index";
+													break; 								
 											}
 												elseif ($bk['title'] == $key) {
-								
-													$ind += 1;
-
-													echo "$ind:";
-													echo ("<br>");
 													$sw = 1;
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
+													echo '"'; 
 													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
-													}
-													else{
-														echo 'Not Available';
-													}
-													echo ("<br>");
-	
+													echo '"'; 
+													echo " is at $ind no index";
+													break; 	
 												}
 												elseif($bk['author'] == $key){
-													$ind += 1;
 													$sw = 1;
-													echo "$ind:";
-													echo ("<br>");
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
+													echo '"'; 
 													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
-													}
-													else{
-														echo 'Not Available';
-													}
-													echo ("<br>");
-	
+													echo '"'; 
+													echo " is at $ind no index";
+													break;	
 												}
 											
 											}
