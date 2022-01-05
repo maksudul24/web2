@@ -50,7 +50,7 @@
 						?>
 					</td>
 					<td>
-						<form action = "/web/delete.php" method = "post">
+						<form action = "/delete.php" method = "post">
 							<input type="hidden" id="custId" name="custId" value=<?php echo $ind?>>
 							<input type="submit" name="Delete"
 									value="Delete"/> 
@@ -62,7 +62,7 @@
 		</table>
 		<table style = "border:1px solid black;margin-left:auto;margin-right:auto;">
 	      	<tr>
-				<td> <form action = "/web/add.php">
+				<td> <form action = "/add.php">
 								<input type="submit" name="Add" value="Add a Book"/> 
 					</form> 
 				</td>

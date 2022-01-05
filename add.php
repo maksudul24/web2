@@ -6,7 +6,7 @@
 	<body>
 		<?php $ind = "start" ?>
 		<table  style = "margin-left:auto;margin-right:auto;">
-			<form action ="/web/adding.php" method = "post">
+			<form action ="/adding.php" method = "post">
 				<tr>
 					<th>
 						<label for="title">Title of the book: </label>

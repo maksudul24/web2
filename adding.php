@@ -11,6 +11,6 @@
             );
             $jsonData = json_encode($book_array);
             file_put_contents('books.json', $jsonData);
-            header("Location: http://localhost/web/index.php");
+            header("Location: http://localhost/index.php");
              exit();
 ?>
