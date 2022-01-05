@@ -88,7 +88,7 @@
 											$key = $_POST["fname"];
 										}
 										$ind = 0; 
-										$sw = 1;
+										$sw = 2;
 										foreach($book_array as $bk){  
 											$sw = 2;
 											if($bk['isbn'] == $key){
