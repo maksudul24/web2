@@ -33,7 +33,7 @@
 				</tr>
 				<tr>
 					<th>
-						<label for="isbn">Author:</label>
+						<label for="isbn">ISBN:</label>
 					</th>
 					<td> 
 						<input type="text" id="isbn" name="isbn" required>
