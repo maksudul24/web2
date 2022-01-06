@@ -40,6 +40,18 @@
 					</td>
 				</tr>
 				<tr>
+					<th>
+						<label for="isbn">Availability:</label>
+					</th>
+					<td> 
+						<input type="radio" id="avialable" name="avialable" value="available" required>
+						<label for="availabe">Available</label>
+						<input type="radio" id="not avialable" name="avialable" value="not avialable" required>
+						<label for="not avialable">Not Avialable</label>
+					</td>
+				</tr>
+
+				<tr>
 					<td> 
 						<input type="hidden" id="adding" name="adding" value=<?php echo $ind?>>
 						<input type="submit" id="submit" name="Submit" required>

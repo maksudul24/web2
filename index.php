@@ -9,6 +9,8 @@
 		<?php
 			$booksJson = file_get_contents('books.json');
 			$book_array = json_decode($booksJson, true);
+			$booksTempJson = file_get_contents('book_temp.json');
+			$book_temp = json_decode($booksTempJson, true);
 
 		?>
 		<table border="3" style = "border:1px solid black;margin-left:auto;margin-right:auto;">
@@ -20,8 +22,18 @@
 				<th> Pages </th>
 				<th> Availability </th>
 			</tr>
-			<?php $ind = 0; ?>
-			<?php foreach ($book_array as $book){ ?>
+			<?php
+				$ind = 0;
+				if(!empty($book_array)){
+					$new_book_array = $book_array;
+				}
+				else{
+					$new_book_array = $book_temp;
+				}
+
+			?>
+			
+			<?php foreach ($new_book_array as $book){ ?>
 				<tr>
 					<td>
 						<?php echo $ind+1;?>
