@@ -28,7 +28,7 @@
 						<label for="pages">Pages:</label>
 					</th>
 					<td> 
-						<input type="text" id="pages" name="pages" required>
+						<input type="number" id="pages" name="pages" required>
 					</td>
 				</tr>
 				<tr>
@@ -36,7 +36,7 @@
 						<label for="isbn">ISBN:</label>
 					</th>
 					<td> 
-						<input type="text" id="isbn" name="isbn" required>
+						<input type="number" id="isbn" name="isbn" required>
 					</td>
 				</tr>
 				<tr>
