@@ -100,9 +100,11 @@
 											$key = $_POST["fname"];
 										}
 										$ind = 0; 
-										$sw = 1;
+										$sw = 3;
 										foreach($book_array as $bk){  
-												$sw = 2;
+												if($sw != 1){
+													$sw = 2;
+												}
 												if($bk['isbn'] == $key){
 														$ind += 1;
 														$sw = 1;
@@ -180,11 +182,16 @@
 												
 											}
 											if($sw == 2){
-												echo '"'; 
-												echo $key;
-												echo '"'; 
-												echo ' is not found at the Book Store';
-												$sw = 1;
+												if(!empty($key)){
+													echo '"'; 
+													echo $key;
+													echo '"'; 
+													echo ' is not found at the Book Store';
+													$sw = 1;
+												}
+												else{
+													echo "Search Results are shown here.";
+												}
 											}
 										?>
 									</td>
