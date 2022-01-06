@@ -80,8 +80,8 @@
 				</td>
 				<td>
 					<form method = "post">
-								<label for="fname">(Search by Title/ISBN/Author)</label>
-								<input type="text" id="fname" name="fname" >
+								
+								<input type="text" id="fname" name="fname" placeholder ="Search By Title/ISBN/Author">
 								<input type="submit" name="search" value="Search"/> 
 					</form> 
 				</td>
