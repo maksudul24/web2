@@ -100,84 +100,84 @@
 											$key = $_POST["fname"];
 										}
 										$ind = 0; 
-										$sw = 2;
+										$sw = 1;
 										foreach($book_array as $bk){  
-											$sw = 2;
-											if($bk['isbn'] == $key){
-													$ind += 1;
-													$sw = 1;
-													echo "$ind:";
-													echo ("<br>");
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
-													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
-													}
-													else{
-														echo 'Not Available';
-													}
-													echo ("<br>");
+												$sw = 2;
+												if($bk['isbn'] == $key){
+														$ind += 1;
+														$sw = 1;
+														echo "$ind:";
+														echo ("<br>");
+														echo "ISBN: "; 
+														echo $bk['isbn'];
+														echo ("<br>");
+														echo "Title: "; 
+														echo $bk['title'];
+														echo ("<br>");
+														echo "Author: "; 
+														echo $bk['author'];
+														echo ("<br>");
+														echo "Availability: "; 
+														if($bk['available']){
+															echo 'Available'; 
+														}
+														else{
+															echo 'Not Available';
+														}
+														echo ("<br>");
 
-											}
-												elseif ($bk['title'] == $key) {
-								
-													$ind += 1;
+												}
+													elseif ($bk['title'] == $key) {
+														$sw = 1;
+														$ind += 1;
 
-													echo "$ind:";
-													echo ("<br>");
-													$sw = 1;
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
-													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
+														echo "$ind:";
+														echo ("<br>");
+														$sw = 1;
+														echo "ISBN: "; 
+														echo $bk['isbn'];
+														echo ("<br>");
+														echo "Title: "; 
+														echo $bk['title'];
+														echo ("<br>");
+														echo "Author: "; 
+														echo $bk['author'];
+														echo ("<br>");
+														echo "Availability: "; 
+														if($bk['available']){
+															echo 'Available'; 
+														}
+														else{
+															echo 'Not Available';
+														}
+														echo ("<br>");
+		
 													}
-													else{
-														echo 'Not Available';
+													elseif($bk['author'] == $key){
+														$ind += 1;
+														$sw = 1;
+														echo "$ind:";
+														echo ("<br>");
+														echo "ISBN: "; 
+														echo $bk['isbn'];
+														echo ("<br>");
+														echo "Title: "; 
+														echo $bk['title'];
+														echo ("<br>");
+														echo "Author: "; 
+														echo $bk['author'];
+														echo ("<br>");
+														echo "Availability: "; 
+														if($bk['available']){
+															echo 'Available'; 
+														}
+														else{
+															echo 'Not Available';
+														}
+														echo ("<br>");
+		
 													}
-													echo ("<br>");
-	
-												}
-												elseif($bk['author'] == $key){
-													$ind += 1;
-													$sw = 1;
-													echo "$ind:";
-													echo ("<br>");
-													echo "ISBN: "; 
-													echo $bk['isbn'];
-													echo ("<br>");
-													echo "Title: "; 
-													echo $bk['title'];
-													echo ("<br>");
-													echo "Author: "; 
-													echo $bk['author'];
-													echo ("<br>");
-													echo "Availability: "; 
-													if($bk['available']){
-														echo 'Available'; 
-													}
-													else{
-														echo 'Not Available';
-													}
-													echo ("<br>");
-	
-												}
-											
+												
 											}
 											if($sw == 2){
 												echo '"'; 
